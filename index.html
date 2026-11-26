@@ -1,68 +1,625 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    <header class="flex justify-between bg-[#F0EBE1] py-[1rem] items-center px-[2rem]">
-        <div class="flex items-center justify-center gap-[0.5vw]">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" width="50" height="50" aria-label="Logo">
-  
-  <circle cx="160" cy="150" r="24" fill="#A34824" />
-  
-  
-  <g stroke-width="14" stroke-linecap="round">
-    
-    <line x1="160" y1="42" x2="160" y2="90" stroke="#354136" />
-    
-    
-    <g stroke="#A34824">
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(22.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(45 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(67.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(90 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(112.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(135 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(157.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(180 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(202.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(225 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(247.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(270 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(292.5 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(315 160 150)" />
-      <line x1="160" y1="42" x2="160" y2="90" transform="rotate(337.5 160 150)" />
-    </g>
-  </g>
-</svg>
-            </div>
-            <div>
-                <h1 class="text-[#B4552D] text-2xl font-black">Clarté</h1>
-            </div>
+    <link rel="stylesheet" href="./public/css/output.css" />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header
+      class="flex justify-between bg-[#F0EBE1] py-[1rem] items-center px-[2rem]"
+    >
+      <div class="navbar bg-base-100 rounded-[20px] shadow-sm">
+        <div class="navbar-start flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 300"
+            width="50"
+            height="50"
+            aria-label="Logo"
+          >
+            <circle cx="160" cy="150" r="24" fill="#A34824" />
 
+            <g stroke-width="14" stroke-linecap="round">
+              <line x1="160" y1="42" x2="160" y2="90" stroke="#354136" />
+
+              <g stroke="#A34824">
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(22.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(45 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(67.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(90 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(112.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(135 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(157.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(180 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(202.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(225 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(247.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(270 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(292.5 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(315 160 150)"
+                />
+                <line
+                  x1="160"
+                  y1="42"
+                  x2="160"
+                  y2="90"
+                  transform="rotate(337.5 160 150)"
+                />
+              </g>
+            </g>
+          </svg>
+          <div class="dropdown"></div>
+          <div class="flex items-center justify-center">
+            <h1 class="text-[#B4552D] text-2xl font-black">Clarté</h1>
+          </div>
         </div>
-        <div class="flex gap-[1rem] text-[#1C1E1A] font-bold text-xl ">
-            <a class="text-[#B4552D] underline hover:text-[#1C1E1A]" href="./index.html">Accueil</a>
-            <a class=" hover:underline hover:text-[#B4552D] hover:-translate-y-1" href="">Gruide</a>
-            <a class=" hover:underline hover:text-[#B4552D] hover:-translate-y-1" href="">Etudes de cas</a>
-            <a class=" hover:underline hover:text-[#B4552D] hover:-translate-y-1" href="">Temoignages</a>
-            <a class=" hover:underline hover:text-[#B4552D] hover:-translate-y-1" href="">Agir</a>
-            <a class=" hover:underline hover:text-[#B4552D] hover:-translate-y-1" href="">A propos</a>
+        <div class="navbar-center gap-5 hidden lg:flex">
+          <a
+            class="text-[#B4552D] underline hover:text-[#1C1E1A]"
+            href="./index.html"
+            >Accueil</a
+          >
+          <a
+            class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
+            href=""
+            >Gruide</a
+          >
+          <a
+            class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
+            href=""
+            >Etudes de cas</a
+          >
+          <a
+            class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
+            href=""
+            >Temoignages</a
+          >
+          <a
+            class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
+            href=""
+            >Agir</a
+          >
+          <a
+            class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
+            href=""
+            >A propos</a
+          >
         </div>
-        <div>
-            <button class="bg-[#B4552D] px-[1vw] py-[1vh] text-[#F0EBE1] font-extrabold rounded-full hover:text-[#1C1E1A] hover:bg-[#F0EBE1] hover:-translate-y-1 ease-in">s'abonner</button>
+        <div class="navbar-end">
+          <button
+            class="bg-[#3B4A3A] px-[1vw] py-[1vh] text-[#F0EBE1] font-extrabold rounded-full hover:text-[#1C1E1A] hover:bg-[#B4552D] ease-in"
+          >
+            s'abonner
+          </button>
         </div>
+      </div>
     </header>
     <main>
-        <section></section>
+      <section
+        class="w-full h-[80vh] px-[2.5vw] lg:pl-[12.5vw] pt-[1rem] lg:pt-[2rem]"
+      >
+        <div
+          class="hero hover:shadow-[0px_0px_8px_8px_#B4552D] px-[2rem] pb-[2rem]"
+        >
+          <h1 class="font-black text-2xl lg:text-3xl">
+            16 jours d'activisme contre la violence basée sur le genre
+          </h1>
+          <p class="font-medium">
+            Du 25 novembre, Journée internationale pour l'élimination de la
+            violence à l'égard des femmes, au 10 décembre, Journée des droits de
+            l'homme. Les médias participent à façonner notre perception de la
+            violence : qui est blâmé, qui est entendu et comment les faits sont
+            nommés.
+          </p>
+          <a
+            class="bg-[#B4552D] text-center rounded-full font-medium hover:bg-[#1C1E1A] hover:text-[#F0EBE1] w-55 py-1"
+            href=""
+            >Commencer l'action du jour</a
+          >
+        </div>
+      </section>
+      <section
+        class="w-full flex flex-col gap-[2rem] h-[80vh] px-[2.5vw] lg:px-[10vw] py-[3rem] pt-[1rem] lg:pt-[2rem]"
+      >
+        <div>
+          <h1
+            class="font-black text-5xl text-[#F0EBE1] bg-[#3B4A3A] p-[2vw] rounded-t-[10px] text-center"
+          >
+            Les 16 jours d'activisme contre la violence basée sur le genre
+          </h1>
+          <div
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-b-[50px]"
+          >
+            <h1 class="font-black text-3xl">La campagne, jour après jour</h1>
+            <p class="font-medium">
+              Clique sur un jour pour voir l'action à faire. La couleur de la
+              campagne mondiale est l'orange, et nous avons choisi sa teinte
+              terre cuite (terracotta) pour qu'elle s'accorde avec l'identité du
+              site.
+            </p>
+          </div>
+        </div>
 
+        <div class="grid grid-cols-8 gap-2 lg:gap-[1vw]">
+          <a href="#1"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              1
+            </button></a
+          >
+          <a href="#2"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              2
+            </button></a
+          >
+          <a href="#3"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              3
+            </button></a
+          >
+          <a href="#4"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              4
+            </button></a
+          >
+          <a href="#5"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              5
+            </button></a
+          >
+          <a href="#6"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              6
+            </button></a
+          >
+          <a href="#7"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              7
+            </button></a
+          >
+          <a href="#8"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              8
+            </button></a
+          >
+          <a href="#9"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              9
+            </button></a
+          >
+          <a href="#10"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              10
+            </button></a
+          >
+          <a href="#11"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              11
+            </button></a
+          >
+          <a href="#12"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              12
+            </button></a
+          >
+          <a href="#13"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              13
+            </button></a
+          >
+          <a href="#14"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              14
+            </button></a
+          >
+          <a href="#15"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              15
+            </button></a
+          >
+          <a href="#16"
+            ><button
+              type="button"
+              class="w-[9vw] h-[9vw] flex justify-center text-[#F0EBE1] items-center rounded-[10px] font-black lg:text-5xl text-2xl border-[5px] focus:bg-[#3B4A3A] hover:bg-[#1C1E1A] focus:outline-2 focus:outline-offset-2 border-[#3B4A3A] bg-amber-600"
+            >
+              16
+            </button></a
+          >
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] bg-[#F0EBE1] rounded-[10px] p-[3rem]"
+        >
+          <div
+            id="1"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">jour 1 / 25 novembre</p>
+            <h1 class="font-black text-3xl">
+              Journée internationale pour l'élimination de la violence à l'égard
+              des femmes
+            </h1>
+            <p class="font-medium">
+              Aujourd'hui commencent 16 jours d'action contre les violences
+              faites aux femmes. Ces violences touchent toutes les classes
+              sociales, tous les âges et tous les milieux. Elles ne sont jamais
+              une affaire privée. Pendant 16 jours, nous informons, nous
+              écoutons et nous agissons.
+            </p>
+          </div>
+          <div
+            id="2"
+            class="py-[2vw] px-[2vw] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 2 · 26 novembre</p>
+            <h1 class="font-black text-3xl">
+              Reconnaître les formes de violence
+            </h1>
+            <p class="font-medium">
+              La violence n'est pas seulement physique. Elle peut être
+              psychologique (insultes, humiliations, menaces), verbale,
+              sexuelle, économique (priver l'autre d'argent ou d'autonomie) et
+              numérique (surveillance, harcèlement en ligne). Reconnaître la
+              violence est la première étape pour s'en protéger ou aider
+              quelqu'un.
+            </p>
+          </div>
+          <div
+            id="3"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 3 · 27 novembre</p>
+            <h1 class="font-black text-3xl">Le contrôle coercitif</h1>
+            <p class="font-medium">
+              Isolement progressif, surveillance constante, critiques
+              permanentes, contrôle des déplacements, des vêtements ou des
+              fréquentations : ce sont des signes d'emprise. Il n'y a pas
+              toujours de coups, mais la liberté de la personne est peu à peu
+              confisquée. Si cela vous parle, vous n'êtes pas seule : appelez le
+              3919.
+            </p>
+          </div>
+          <div
+            id="4"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 4 · 28 novembre</p>
+            <h1 class="font-black text-3xl">
+              Violences numériques et cyberharcèlement
+            </h1>
+            <p class="font-medium">
+              Messages incessants, géolocalisation imposée, accès forcé au
+              téléphone, diffusion d'images intimes sans consentement : tout
+              cela est de la violence. Conservez des captures d'écran, ne
+              supprimez rien, et signalez sur internet-signalement.gouv.fr
+              (plateforme Pharos). Pour les mineurs : 3018.
+            </p>
+          </div>
+          <div
+            id="5"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 5 · 29 novembre</p>
+            <h1 class="font-black text-3xl">Les violences économiques</h1>
+            <p class="font-medium">
+              Confisquer le salaire, interdire de travailler, contrôler le
+              compte bancaire, retenir les papiers d'identité : c'est une façon
+              de rendre quelqu'un dépendant. L'autonomie financière est un
+              droit. Les CIDFF accompagnent gratuitement les femmes dans leurs
+              démarches (emploi, logement, droits).
+            </p>
+          </div>
+          <div
+            id="6"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 6 · 30 novembre</p>
+            <h1 class="font-black text-3xl">
+              Violences sexuelles et consentement
+            </h1>
+            <p class="font-medium">
+              Le consentement doit être libre, éclairé, spécifique et
+              réversible. Il n'existe pas dans la contrainte, la peur ou la
+              pression. Le silence ou l'absence de résistance ne signifient pas
+              un accord. Une aide existe : 3919, ou le 0 800 05 95 95 (Viols
+              Femmes Informations), anonyme et gratuit.
+            </p>
+          </div>
+          <div
+            id="7"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 7 · 1er décembre</p>
+            <h1 class="font-black text-3xl">Harcèlement sexuel au travail</h1>
+            <p class="font-medium">
+              Remarques sexistes, gestes déplacés, chantage, messages insistants
+              : le harcèlement sexuel est interdit par la loi. Vous pouvez en
+              parler à un représentant du personnel, au médecin du travail, à
+              l'inspection du travail ou au Défenseur des droits (09 69 39 00
+              00). L'association AVFT est aussi spécialisée sur le sujet.
+            </p>
+          </div>
+          <div
+            id="8"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 8 · 2 décembre</p>
+            <h1 class="font-black text-3xl">
+              Comment soutenir une amie ou un proche
+            </h1>
+            <p class="font-medium">
+              Écoutez sans juger, croyez ce qui est dit, ne minimisez pas, ne
+              dites pas « pourquoi tu ne pars pas ? ». Respectez son rythme,
+              rappelez que ce n'est pas sa faute et proposez de l'accompagner
+              dans ses démarches. L'entourage peut aussi appeler le 3919 pour
+              être conseillé.
+            </p>
+          </div>
+          <div
+            id="9"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">jour 9 / 3 décembre</p>
+            <h1 class="font-black text-3xl">
+              Le 3919 et les ressources d'aide
+            </h1>
+            <p class="font-medium">
+              Le 3919 est le numéro national d'écoute : gratuit, anonyme,
+              disponible 24h/24 et 7j/7, il oriente vers les bons services. En
+              danger immédiat : 17 ou 112. Par SMS, pour les personnes sourdes
+              ou malentendantes : 114. Chat anonyme :
+              arretonslesviolences.gouv.fr.
+            </p>
+          </div>
+          <div
+            id="10"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 10 · 4 décembre</p>
+            <h1 class="font-black text-3xl">Élaborer un plan de sécurité</h1>
+            <p class="font-medium">
+              Préparez à l'avance : un téléphone de secours, un numéro d'urgence
+              mémorisé, un endroit sûr où aller, une personne de confiance et un
+              sac avec papiers d'identité, clés, argent, médicaments et
+              documents des enfants. Une association peut vous aider à le
+              construire. Appelez le 3919.
+            </p>
+          </div>
+          <div
+            id="11"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 11 · 5 décembre</p>
+            <h1 class="font-black text-3xl">
+              Les enfants exposés aux violences conjugales
+            </h1>
+            <p class="font-medium">
+              Un enfant qui assiste aux violences en est aussi victime, même
+              s'il n'est jamais frappé. Troubles du sommeil, peur, difficultés
+              scolaires, agressivité peuvent apparaître. Si un enfant est en
+              danger, appelez le 119 (gratuit, 24h/24).
+            </p>
+          </div>
+          <div
+            id="12"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 12 · 6 décembre</p>
+            <h1 class="font-black text-3xl">
+              Vos droits en France Vous pouvez porter
+            </h1>
+            <p class="font-medium">
+              plainte au commissariat ou à la gendarmerie, ou signaler en ligne.
+              Vous pouvez aussi demander une ordonnance de protection au juge
+              aux affaires familiales, qui peut décider de mesures rapides
+              (éloignement, logement, garde des enfants). L'aide
+              juridictionnelle peut financer l'avocat selon vos ressources.
+            </p>
+          </div>
+          <div
+            id="13"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 13 · 7 décembre</p>
+            <h1 class="font-black text-3xl">Associations et accompagnement</h1>
+            <p class="font-medium">
+              Des associations accompagnent gratuitement : écoute, hébergement,
+              aide juridique, soutien psychologique. Parmi elles : CIDFF,
+              Fondation des femmes, Nous Toutes, Solidarité Femmes. Vous pouvez
+              aussi vous rapprocher de la mairie ou d'un centre d'action
+              sociale.
+            </p>
+          </div>
+          <div
+            id="14"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 14 · 8 décembre</p>
+            <h1 class="font-black text-3xl">
+              Journée internationale pour l'élimination de la violence à l'égard
+              des femmes
+            </h1>
+            <p class="font-medium">
+              Que faire si l'on est témoin ? Ne restez pas indifférent. Sans
+              vous mettre en danger : demandez à la personne si elle va bien,
+              faites diversion, appelez le 17 ou le 112 en cas d'urgence, ou
+              alertez un voisin ou un agent. Vous pouvez aussi appeler le 3919
+              pour savoir comment réagir.
+            </p>
+          </div>
+          <div
+            id="15"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 15 · 9 décembre</p>
+            <h1 class="font-black text-3xl">Parler du sujet autour de soi</h1>
+            <p class="font-medium">
+              Briser le silence protège. Parlez-en en famille, au travail, avec
+              vos amis. Partagez les numéros utiles, corrigez les idées reçues
+              (« ce n'est pas si grave », « elle l'a provoqué »). Informer,
+              c'est déjà agir.
+            </p>
+          </div>
+          <div
+            id="16"
+            class="py-[2rem] px-[2rem] flex flex-col gap-[1rem] border-[#3B4A3A] border-[3px] rounded-[50px]"
+          >
+            <p class="font-medium">Jour 16 · 10 décembre</p>
+            <h1 class="font-black text-3xl">
+              Journée des droits de l'homme : réflexion et
+              engagement
+            </h1>
+            <p class="font-medium">
+                Les droits des femmes sont des droits humains. Ces 16
+              jours se terminent, mais l'engagement continue : écouter, croire,
+              orienter, agir. 3919 : gratuit, anonyme, 24h/24 et 7j/7.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
 </html>
