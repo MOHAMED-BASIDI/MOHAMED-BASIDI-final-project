@@ -150,7 +150,9 @@
             <h1 class="text-[#B4552D] text-2xl font-black">Clarté</h1>
           </div>
         </div>
-        <div class="navbar-center gap-5 hidden lg:flex">
+         <input class="md:hidden peer hidden" id="menuChecked" type="checkbox">
+         <div class="peer-checked:flex hidden flex-col max-sm:absolute max-sm:right-0 max-sm:top-[5rem]  max-sm:bg-[#f4ede7] max-sm:w-full max-sm:shadow-md  max-sm:p-3 max-sm:gap-4 max-sm:rounded-2xl  relative md:flex md:flex-row md:items-center md:gap-6">
+        <div class=" flex flex-col gap-3 md:flex-row md:gap-10 max-sm:relative">
           <a
             class="text-[#B4552D] underline hover:text-[#1C1E1A]"
             href="./index.html"
@@ -158,13 +160,13 @@
           >
           <a
             class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
-            href=""
-            >Gruide</a
+            href="./public/pages/about.html" target=""
+            >	Vidéos</a
           >
           <a
             class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
             href=""
-            >Etudes de cas</a
+            >Etudes</a
           >
           <a
             class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
@@ -179,16 +181,40 @@
           <a
             class="hover:underline hover:text-[#B4552D] hover:-translate-y-1"
             href=""
-            >A propos</a
+            >Propos</a
           >
         </div>
-        <div class="navbar-end">
+        </div>
+        <div class="navbar-end mr-[1rem]">
           <button
             class="bg-[#3B4A3A] px-[1vw] py-[1vh] text-[#F0EBE1] font-extrabold rounded-full hover:text-[#1C1E1A] hover:bg-[#B4552D] ease-in"
           >
             s'abonner
           </button>
         </div>
+        <label for="menuChecked"
+          class="cursor-pointer peer-checked:[&_.menu-icon]:hidden  peer-checked:[&_.close-icon]:block"><svg
+            class="menu-icon block  text-[#f26a1b] md:hidden "
+            xmlns="http://www.w3.org/2000/svg" width="24"
+            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-align-right-justified">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M10 18l10 0" />
+          </svg>
+          <svg class="close-icon hidden text-[#f26a1b] md:hidden"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-x">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M6.707 5.293l5.293 5.292l5.293 -5.292a1 1 0 0 1 1.414 1.414l-5.292 5.293l5.292 5.293a1 1 0 0 1 -1.414 1.414l-5.293 -5.292l-5.293 5.292a1 1 0 1 1 -1.414 -1.414l5.292 -5.293l-5.292 -5.293a1 1 0 0 1 1.414 -1.414" />
+          </svg>
+
+        </label>
       </div>
     </header>
     <main class="">
