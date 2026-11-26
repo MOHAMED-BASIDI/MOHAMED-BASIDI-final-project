@@ -9,6 +9,16 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-emerald-700: oklch(50.8% 0.118 165.612);
+    --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -162,18 +172,155 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
   .border-collapse {
     border-collapse: collapse;
   }
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-\[0\.5vw\] {
+    gap: 0.5vw;
+  }
+  .gap-\[1\] {
+    gap: 1;
+  }
+  .gap-\[1rem\] {
+    gap: 1rem;
+  }
+  .gap-\[1vw\] {
+    gap: 1vw;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#3B4A3A\] {
+    background-color: #3B4A3A;
+  }
+  .bg-\[\#B4552D\] {
+    background-color: #B4552D;
+  }
+  .bg-\[\#F0EBE1\] {
+    background-color: #F0EBE1;
+  }
+  .bg-\[3B4A3A\] {
+    background-color: 3B4A3A;
+  }
+  .bg-\[3B4A3\] {
+    background-color: 3B4A3;
+  }
+  .bg-\[3B4A\] {
+    background-color: 3B4A;
+  }
+  .bg-\[3BA\] {
+    background-color: 3BA;
+  }
+  .bg-\[3B\] {
+    background-color: 3B;
+  }
+  .bg-\[\@B4552D\] {
+    background-color: @B4552D;
+  }
+  .bg-\[B4\] {
+    background-color: B4;
+  }
+  .bg-\[B4552D\] {
+    background-color: B4552D;
+  }
+  .bg-\[B4552\] {
+    background-color: B4552;
+  }
+  .bg-\[B\] {
+    background-color: B;
+  }
+  .px-0 {
+    padding-inline: 0px;
+  }
+  .px-\[1vw\] {
+    padding-inline: 1vw;
+  }
+  .px-\[2rem\] {
+    padding-inline: 2rem;
+  }
+  .py-\[1rem\] {
+    padding-block: 1rem;
+  }
+  .py-\[1vh\] {
+    padding-block: 1vh;
+  }
+  .py-\[2rem\] {
+    padding-block: 2rem;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .text-\[\#1C1E1A\] {
+    color: #1C1E1A;
+  }
+  .text-\[\#B4552D\] {
+    color: #B4552D;
+  }
+  .text-\[\#F0EBE1\] {
+    color: #F0EBE1;
+  }
+  .text-\[\#F0EBEI\] {
+    color: #F0EBEI;
+  }
+  .text-\[F0EBEI\] {
+    color: F0EBEI;
+  }
+  .text-\[F0EBE\] {
+    color: F0EBE;
+  }
+  .text-\[F0\] {
+    color: F0;
+  }
+  .text-\[F\] {
+    color: F;
+  }
+  .text-\[text-\[\#B4552D\]\] {
+    color: text-[#B4552D];
   }
   .text-emerald-700 {
     color: var(--color-emerald-700);
@@ -181,26 +328,130 @@
   .underline {
     text-decoration-line: underline;
   }
+  .underline-offset-\[1rem\] {
+    text-underline-offset: 1rem;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .ease-in {
+    --tw-ease: var(--ease-in);
+    transition-timing-function: var(--ease-in);
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  @media (hover: hover) {
+    .hover\:-translate-y-0\.5:hover {
+      --tw-translate-y: calc(var(--spacing) * -0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:-translate-y-1:hover {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+    .hover\:bg-\[\#F0EBE1\]:hover {
+      background-color: #F0EBE1;
+    }
+    .hover\:px-1\.5:hover {
+      padding-inline: calc(var(--spacing) * 1.5);
+    }
+    .hover\:px-\[1\.5\]:hover {
+      padding-inline: 1.5;
+    }
+    .hover\:px-\[1\.5vw\]:hover {
+      padding-inline: 1.5vw;
+    }
+    .hover\:px-\[1\.h\]:hover {
+      padding-inline: 1.h;
+    }
+    .hover\:py-\[1\.5\]:hover {
+      padding-block: 1.5;
+    }
+    .hover\:py-\[1\.5vh\]:hover {
+      padding-block: 1.5vh;
+    }
+    .hover\:text-\[\#1C1E1A\]:hover {
+      color: #1C1E1A;
+    }
+    .hover\:text-\[\#B4552D\]:hover {
+      color: #B4552D;
+    }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+  }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-ease: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
