@@ -28,11 +28,98 @@ padding: 0 15vw 5vh 15vw;
 width: 95vw;
 padding: 0 17vw 10vh 14vw;
   }
-}
-.background{
-  background-image: url(../images/chaos\ but\ sacred.jpg);
-  background-repeat: no-repeat;
-  background-size: 50vw 100vh;
+  .login{
   width: 100vw;
   height: 100vh;
+  
+}
+  .background{
+    background-image: url(../images/téléchargement\ \(10\).jpg);
+  background-size:  100vw 120vw;
+  width: 100vw;
+  height: 120vh;
+}
+  .email>input , .password>input{
+  width: 50vw;
+}
+  .email , .password{
+  padding: 1vh 3vw;
+}
+.background>div>div>a>h2{
+  font-size: 0.5vw;
+  width: 50vw;
+}
+.background{
+  padding-bottom: 10vh;
+}
+.checked>div{
+  padding: 0 1vh;
+}
+}
+
+.background{
+  background-image: url(../images/téléchargement\ \(2\).jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 97%;
+  border-radius: 20px;
+}
+.background>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.background>div>h1{
+  font-size: 7rem;
+  color: #B4552D;
+}
+.background>div>div>a>h2{
+  font-size: 2rem;
+  color: #1C1E1A;
+  background: #b4562de1;
+  width: 50vh;
+  border-radius: 25px;
+  text-align: center;
+  transition: 0.5s;
+}
+.background>div>div>a>h2:hover{
+  color:  #b4562de1;
+  background: #1C1E1A;
+  
+}
+.checked{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+.checked>div{
+  background-color:#d6d6d6e3;
+  padding: 0 1vw;
+  border-radius: 20px;
+}
+.email , .password{
+  background-color: #d6d6d6e3;
+  padding: 1vh 2vw;
+  border-radius: 25px;
+}
+.email>input , .password>input{
+  border: none;
+  outline-style: none;
+  width: 20vw;
+  border-radius: 20px;
+}
+.login{
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f1e5;
 }
