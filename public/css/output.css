@@ -192,6 +192,9 @@
   .relative {
     position: relative;
   }
+  .end-auto {
+    inset-inline-end: auto;
+  }
   .mx-\[1rem\] {
     margin-inline: 1rem;
   }
@@ -225,6 +228,12 @@
   .table {
     display: table;
   }
+  .h-\[2vw\] {
+    height: 2vw;
+  }
+  .h-\[3vw\] {
+    height: 3vw;
+  }
   .h-\[9vw\] {
     height: 9vw;
   }
@@ -234,8 +243,23 @@
   .w-55 {
     width: calc(var(--spacing) * 55);
   }
+  .w-\[01vw\] {
+    width: 01vw;
+  }
   .w-\[9vw\] {
     width: 9vw;
+  }
+  .w-\[12vw\] {
+    width: 12vw;
+  }
+  .w-\[13vw\] {
+    width: 13vw;
+  }
+  .w-\[14vw\] {
+    width: 14vw;
+  }
+  .w-\[15vw\] {
+    width: 15vw;
   }
   .w-full {
     width: 100%;
@@ -267,6 +291,9 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .justify-around {
     justify-content: space-around;
   }
@@ -275,6 +302,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-0 {
     gap: 0px;
@@ -294,6 +327,9 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-\[1rem\] {
     gap: 1rem;
   }
@@ -302,6 +338,9 @@
   }
   .gap-\[10vw\] {
     gap: 10vw;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -322,6 +361,10 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
+  .rounded-t-\[20px\] {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
   .rounded-b-\[50px\] {
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -329,6 +372,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[2px\] {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-\[3px\] {
     border-style: var(--tw-border-style);
@@ -359,6 +406,9 @@
   .p-\[3rem\] {
     padding: 3rem;
   }
+  .p-\[3vw\] {
+    padding: 3vw;
+  }
   .px-\[1vw\] {
     padding-inline: 1vw;
   }
@@ -374,6 +424,15 @@
   .px-\[3rem\] {
     padding-inline: 3rem;
   }
+  .px-\[3vw\] {
+    padding-inline: 3vw;
+  }
+  .px-\[5vw\] {
+    padding-inline: 5vw;
+  }
+  .px-\[9vw\] {
+    padding-inline: 9vw;
+  }
   .py-1 {
     padding-block: var(--spacing);
   }
@@ -383,6 +442,9 @@
   .py-\[1vh\] {
     padding-block: 1vh;
   }
+  .py-\[1vw\] {
+    padding-block: 1vw;
+  }
   .py-\[2rem\] {
     padding-block: 2rem;
   }
@@ -391,6 +453,24 @@
   }
   .py-\[3rem\] {
     padding-block: 3rem;
+  }
+  .py-\[3vw\] {
+    padding-block: 3vw;
+  }
+  .py-\[5vw\] {
+    padding-block: 5vw;
+  }
+  .py-\[9vw\] {
+    padding-block: 9vw;
+  }
+  .py-\[14vw\] {
+    padding-block: 14vw;
+  }
+  .py-\[vw\] {
+    padding-block: vw;
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
   }
   .pt-\[1rem\] {
     padding-top: 1rem;
@@ -440,6 +520,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -627,6 +711,9 @@
     .lg\:flex {
       display: flex;
     }
+    .lg\:w-\[50vw\] {
+      width: 50vw;
+    }
     .lg\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -636,8 +723,17 @@
     .lg\:gap-\[1vw\] {
       gap: 1vw;
     }
+    .lg\:px-0 {
+      padding-inline: 0px;
+    }
     .lg\:px-\[10vw\] {
       padding-inline: 10vw;
+    }
+    .lg\:py-\[0\.5vw\] {
+      padding-block: 0.5vw;
+    }
+    .lg\:py-\[1vw\] {
+      padding-block: 1vw;
     }
     .lg\:pt-2 {
       padding-top: calc(var(--spacing) * 2);
@@ -647,6 +743,10 @@
     }
     .lg\:pl-\[12\.5vw\] {
       padding-left: 12.5vw;
+    }
+    .lg\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
     .lg\:text-3xl {
       font-size: var(--text-3xl);
