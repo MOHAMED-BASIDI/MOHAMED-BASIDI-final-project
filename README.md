@@ -13,6 +13,18 @@ responsible media representation dec 8
 - Tailwind
 - Css
 
+## color
+- orange [#f26a1b]
+- cream  [#F0EBE1] 
+- noir   [#232b22]
+- green  [#3B4A3A]
+
+## pages
+- Accueil
+- Videos
+- bien Informer
+- login & inscription
+
 ## 📦 Installation
 
 ```bash
